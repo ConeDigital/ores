@@ -193,6 +193,14 @@ p{
   }
 }
 
+.cd-sod-option{
+  
+  &:hover{
+    color: #eee;
+    background: #282828;
+  }
+}
+
 //GLOBALS ------------------------------------------
 
 .nm-shop-loop-actions > a{

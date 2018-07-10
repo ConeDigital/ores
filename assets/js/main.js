@@ -40,5 +40,31 @@ jQuery(document).ready( function($) {
         grabCursor: true
     });
 
+    $('div.cone-tr .sod_select').on('focusout', function (e) {
+        $('.cone-tr').removeClass('open');
+        var ss = $(this).find('span.sod_select');
+        ss.removeClass('focus');
+        ss.removeClass('open');
+    });
+
+    $('.cone-variations').on('click', function () {
+        $('.cone-tr').toggleClass('open');
+        var ss = $(this).find('span.sod_select');
+        ss.toggleClass('focus');
+        ss.toggleClass('open');
+
+    });
+
+    //Fade out on click outside
+    $(document).mouseup(function(e){
+        var container = $(".cone-tr");
+        var st = $('.cone-variations').find('span.sod_select');
+        // if the target of the click isn't the container nor a descendant of the container
+        if (!container.is(e.target) && container.has(e.target).length === 0 && container.hasClass('open')){
+            container.removeClass('open');
+            st.removeClass('open');
+        }
+    });
+
 
 });
