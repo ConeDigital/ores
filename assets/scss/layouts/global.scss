@@ -15,7 +15,6 @@ p{
 
 .nm-top-bar {
   display: block;
-  z-index: 10000;
 }
 
 .nm-menu li a {
@@ -144,6 +143,10 @@ p{
 
   .cd-home-swiper-card{
     height: 63vw;
+  }
+
+  .nm-top-bar {
+    z-index: 10000;
   }
 }
 
