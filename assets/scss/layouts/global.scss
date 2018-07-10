@@ -150,6 +150,49 @@ p{
   }
 }
 
+
+
+//PRODUCT ------------------------------------------
+
+
+.cd-tabs .tabs{
+  text-align: left;
+
+  li{
+
+    a{
+      font-size: 10px;
+      color: #666;
+      margin: 0 14px 0 0;
+      text-transform: uppercase;
+    }
+  }
+  li.active{
+    a{
+      color: black;
+      border-bottom-color: black;
+    }
+  }
+}
+
+.cd-tabs{
+
+  border: none;
+
+  .panel {
+    padding: 15px 0 0;
+
+    p{
+      font-size: 12px;
+    }
+  }
+
+  .shop_attributes tr th, .shop_attributes tr td{
+    font-size: 12px;
+    min-width: 90px;
+  }
+}
+
 //GLOBALS ------------------------------------------
 
 .nm-shop-loop-actions > a{

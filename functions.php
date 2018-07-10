@@ -13,6 +13,11 @@
 	}
 	add_action( 'wp_enqueue_scripts', 'nm_child_theme_styles', 1000 ); // Note: Use priority "1000" to include the stylesheet after the parent theme stylesheets
 
+
+remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10);
+add_action('woocommerce_single_product_summary', 'woocommerce_output_product_data_tabs', 45);
+
+
 /**
  * Register term fields
  */
