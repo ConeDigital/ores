@@ -37,8 +37,11 @@
     </div>
 <div class="cd-home-products nm-row">
     <div class="col-xs-12">
-        <h2>Featured  pieces</h2>
-        <?php echo do_shortcode('[vc_row][vc_column][featured_products per_page="12" columns="4" orderby="" order=""][/vc_column][/vc_row]') ; ?>
+        <?php while ( have_posts() ) : the_post(); ?>
+
+            <?php the_content() ; ?>
+
+        <?php endwhile; ?>
     </div>
 </div>
 
