@@ -131,6 +131,26 @@ p{
   }
 }
 
+.cd-home-left-link{
+  font-size: 20px;
+  border: 1px solid;
+  padding: 10px 40px;
+  background: white;
+  position: absolute;
+  bottom: 50px;
+  left: -20px;
+}
+
+.cd-home-right-link{
+  font-size: 20px;
+  border: 1px solid;
+  padding: 10px 40px;
+  background: white;
+  position: absolute;
+  bottom: 50px;
+  right: -20px;
+}
+
 
 @media (max-width: 600px) {
 
@@ -147,6 +167,20 @@ p{
 
   .nm-top-bar {
     z-index: 10000;
+  }
+
+  .cd-home-right-link{
+    font-size: 20px;
+    border: 1px solid;
+    padding: 10px 40px;
+    background: white;
+    position: absolute;
+    bottom: 50px;
+    right: -20px;
+  }
+
+  .cd-home-left-link{
+    left: 20px;
   }
 }
 
