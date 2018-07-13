@@ -35,7 +35,7 @@
             </div>
         </div>
     </div>
-<div class="cd-home-products nm-row">
+<div class="nm-row">
     <div class="col-xs-12">
         <?php while ( have_posts() ) : the_post(); ?>
 
