@@ -14,35 +14,41 @@ jQuery(document).ready( function($) {
         grabCursor: true
     });
 
+    //HOME HERO SWIPER MIDDLE
+    var homeHeroSwiperMiddle = new Swiper('.cd-home-swiper-middle', {
+        init: false,
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        spaceBetween: 0,
+        autoplay: 6000,
+        loop: true,
+        slideShadows: true,
+        disableOnInteraction: false,
+        effect: 'flip',
+        grabCursor: true
+    });
+
+    //HOME HERO SWIPER RIGHT
+    var homeHeroSwiperRight = new Swiper('.cd-home-swiper-right', {
+        init: false,
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        spaceBetween: 0,
+        autoplay: 6000,
+        loop: true,
+        slideShadows: true,
+        disableOnInteraction: false,
+        effect: 'flip',
+        grabCursor: true
+    });
+
     setTimeout(function(){
-        //HOME HERO SWIPER MIDDLE
-        var homeHeroSwiperMiddle = new Swiper('.cd-home-swiper-middle', {
-            slidesPerView: 1,
-            slidesPerGroup: 1,
-            spaceBetween: 0,
-            autoplay: 6000,
-            loop: true,
-            slideShadows: true,
-            disableOnInteraction: false,
-            effect: 'flip',
-            grabCursor: true
-        });
+        homeHeroSwiperMiddle.init();
     }, 500);
 
 
     setTimeout(function(){
-        //HOME HERO SWIPER RIGHT
-        var homeHeroSwiperRight = new Swiper('.cd-home-swiper-right', {
-            slidesPerView: 1,
-            slidesPerGroup: 1,
-            spaceBetween: 0,
-            autoplay: 6000,
-            loop: true,
-            slideShadows: true,
-            disableOnInteraction: false,
-            effect: 'flip',
-            grabCursor: true
-        });
+        homeHeroSwiperRight.init();
     }, 1000);
 
 
