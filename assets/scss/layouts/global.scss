@@ -235,6 +235,50 @@ p{
   }
 }
 
+.product.thumbnails-vertical.product-type-variable .summary{
+  position: relative;
+}
+
+.button-wrapper{
+  left: 79px;
+  position: absolute;
+  bottom: -60px;
+  max-width: calc(50% - 15px);
+  right: 0;
+
+  #chart-button{
+    color: black !important;
+  }
+}
+
+@media (max-width: 1200px) {
+
+  .button-wrapper{
+    left: auto;
+    right: 0;
+  }
+}
+
+@media (max-width: 992px) {
+
+  .button-wrapper{
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 710px) {
+
+  .button-wrapper{
+    left:0;
+  }
+}
+
+@media (max-width: 550px){
+  .woocommerce-tabs .tabs li {
+    display: inline-block;
+  }
+}
+
 //GLOBALS ------------------------------------------
 
 .nm-shop-loop-actions > a{
