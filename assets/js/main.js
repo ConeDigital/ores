@@ -7,21 +7,24 @@ jQuery(document).ready( function($) {
             slidesPerView: 1,
             slidesPerGroup: 1,
             spaceBetween: 0,
-            autoplay: 6000,
+            autoplay: {
+                delay: 6000,
+            },
             loop: true,
             slideShadows: true,
             disableOnInteraction: false,
             effect: 'flip',
             grabCursor: true
+            //autoplayStart: function (){
+            //    console.log('fisk');
+            //}
         });
 
         //HOME HERO SWIPER MIDDLE
         var homeHeroSwiperMiddle = new Swiper('.cd-home-swiper-middle', {
-            init: false,
             slidesPerView: 1,
             slidesPerGroup: 1,
             spaceBetween: 0,
-            autoplay: 6000,
             loop: true,
             slideShadows: true,
             disableOnInteraction: false,
@@ -31,11 +34,9 @@ jQuery(document).ready( function($) {
 
         //HOME HERO SWIPER RIGHT
         var homeHeroSwiperRight = new Swiper('.cd-home-swiper-right', {
-            init: false,
             slidesPerView: 1,
             slidesPerGroup: 1,
             spaceBetween: 0,
-            autoplay: 6000,
             loop: true,
             slideShadows: true,
             disableOnInteraction: false,
@@ -43,15 +44,29 @@ jQuery(document).ready( function($) {
             grabCursor: true
         });
 
-        setTimeout(function(){
-            homeHeroSwiperMiddle.init();
-        }, 500);
+        homeHeroSwiperLeft.on('autoplay', function () {
+            test(homeHeroSwiperLeft, homeHeroSwiperMiddle, 1);
+        });
 
+        homeHeroSwiperMiddle.on('autoplay', function () {
+            test(homeHeroSwiperMiddle, homeHeroSwiperRight, 2);
+        });
 
-        setTimeout(function(){
-            homeHeroSwiperRight.init();
-        }, 1000);
+        homeHeroSwiperRight.on('autoplay', function () {
+            test(homeHeroSwiperRight, homeHeroSwiperLeft, 3);
+        });
+
     });
+
+    function test(current, next, which_swiper){
+        if ( which_swiper !== 3 ) {
+            next.params.autoplay = {
+                delay: 500
+            };
+        }
+        current.autoplay.stop();
+        next.autoplay.start();
+    }
 
 
     $('div.cone-tr .sod_select').on('focusout', function (e) {
