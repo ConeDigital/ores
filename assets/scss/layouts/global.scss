@@ -271,12 +271,17 @@ p{
   .button-wrapper{
     left:0;
   }
+  .nm-widget-panel{
+    z-index: 100000;
+  }
 }
 
 @media (max-width: 550px){
   .woocommerce-tabs .tabs li {
     display: inline-block;
   }
+
+
 }
 
 //GLOBALS ------------------------------------------
