@@ -352,8 +352,10 @@ p{
   font-size: 14px;
 }
 
-.nm-quantity-wrap{
-  display: none;
+.single_variation_wrap{
+  .nm-quantity-wrap{
+    display: none;
+  }
 }
 
 .chart-table, .chart-container h3, .chart-content span{
