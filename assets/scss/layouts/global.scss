@@ -274,6 +274,17 @@ p{
   .nm-widget-panel{
     z-index: 100000;
   }
+
+  .nm-footer-bar{
+
+    .nm-footer-bar-logo{
+      display: none;
+    }
+
+    .menu{
+      text-align: center;
+    }
+  }
 }
 
 @media (max-width: 550px){
