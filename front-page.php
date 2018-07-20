@@ -34,6 +34,17 @@
                 <?php endif; ?>
             </div>
         </div>
+        <div class="swiper-container cd-home-swiper cd-mobile-swiper">
+            <div class="swiper-wrapper">
+                <?php if( have_rows('mobile-swiper') ): ?>
+                    <?php while( have_rows('mobile-swiper') ) : the_row();?>
+                        <div class="cd-home-swiper-card swiper-slide" style="background-image: url('<?php the_sub_field('mobile-swiper-image') ; ?>')">
+                            <a href="<?php the_sub_field('mobile-swiper-link') ; ?>"></a>
+                        </div>
+                    <?php endwhile; ?>
+                <?php endif; ?>
+            </div>
+        </div>
     </div>
 <div class="nm-row">
     <div class="col-xs-12">

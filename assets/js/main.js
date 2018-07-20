@@ -8,7 +8,7 @@ jQuery(document).ready( function($) {
             slidesPerGroup: 1,
             spaceBetween: 0,
             autoplay: {
-                delay: 6000,
+                delay: 2000,
             },
             loop: true,
             slideShadows: true,
@@ -56,12 +56,27 @@ jQuery(document).ready( function($) {
             test(homeHeroSwiperRight, homeHeroSwiperLeft, 3);
         });
 
+        //MOBILE SWIPER
+        var mobileSwiper = new Swiper('.cd-mobile-swiper', {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+            spaceBetween: 0,
+            autoplay: {
+                delay: 2000
+            },
+            loop: true,
+            slideShadows: true,
+            disableOnInteraction: false,
+            effect: 'flip',
+            grabCursor: true
+        });
+
     });
 
     function test(current, next, which_swiper){
         if ( which_swiper !== 3 ) {
             next.params.autoplay = {
-                delay: 500
+                delay: 300
             };
         }
         current.autoplay.stop();

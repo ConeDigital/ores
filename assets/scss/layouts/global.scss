@@ -151,14 +151,24 @@ p{
   right: -20px;
 }
 
+.cd-mobile-swiper{
+  display: none;
+  width: 100%;
+
+  .cd-home-swiper-card{
+    height: 133vw;
+    max-height: 100%;
+  }
+}
 
 @media (max-width: 600px) {
 
   .cd-home-swiper{
-    width: 50%;
-  }
-  .cd-home-swiper-middle{
     display: none;
+  }
+
+  .cd-mobile-swiper{
+    display: block;
   }
 
   .cd-home-swiper-card{
@@ -247,7 +257,10 @@ p{
   right: 0;
 
   #chart-button{
-    color: black !important;
+    color: #444!important;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 12px;
   }
 }
 
