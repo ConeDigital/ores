@@ -10,6 +10,7 @@ jQuery(document).ready( function($) {
             autoplay: {
                 delay: 2000,
             },
+            speed: 1000,
             loop: true,
             slideShadows: true,
             disableOnInteraction: false,
@@ -25,6 +26,7 @@ jQuery(document).ready( function($) {
             slidesPerView: 1,
             slidesPerGroup: 1,
             spaceBetween: 0,
+            speed: 1000,
             loop: true,
             slideShadows: true,
             disableOnInteraction: false,
@@ -37,6 +39,7 @@ jQuery(document).ready( function($) {
             slidesPerView: 1,
             slidesPerGroup: 1,
             spaceBetween: 0,
+            speed: 1000,
             loop: true,
             slideShadows: true,
             disableOnInteraction: false,
@@ -64,6 +67,7 @@ jQuery(document).ready( function($) {
             autoplay: {
                 delay: 2000
             },
+            speed: 1000,
             loop: true,
             slideShadows: true,
             disableOnInteraction: false,
