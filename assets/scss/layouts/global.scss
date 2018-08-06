@@ -314,6 +314,10 @@ p{
     flex-direction: column-reverse;
   }
 
+  .nm-top-bar-text > p:first-child{
+    font-size: 8px;
+  }
+
 }
 
 //GLOBALS ------------------------------------------
