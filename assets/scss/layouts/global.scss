@@ -264,6 +264,10 @@ p{
   }
 }
 
+.nm-top-bar-text > p:first-child {
+  color: black;
+}
+
 @media (max-width: 1200px) {
 
   .button-wrapper{
