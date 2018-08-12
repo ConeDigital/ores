@@ -264,8 +264,11 @@ p{
   }
 }
 
-.nm-top-bar-text > p:first-child {
-  color: black;
+.nm-top-bar-text{
+  p{
+    color: black;
+    text-align: center;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -321,6 +324,11 @@ p{
   .nm-top-bar-text > p:first-child{
     font-size: 8px;
     color: black;
+  }
+  .nm-top-bar-text{
+    p{
+      font-size: 8px !important;
+    }
   }
 }
 
