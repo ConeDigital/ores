@@ -46,6 +46,7 @@
             </div>
         </div>
     </div>
+<p style="display: none">hej</p>
 <div class="nm-row">
     <div class="col-xs-12">
         <?php while ( have_posts() ) : the_post(); ?>
