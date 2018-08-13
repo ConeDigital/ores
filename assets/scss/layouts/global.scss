@@ -264,13 +264,6 @@ p{
   }
 }
 
-.nm-top-bar-text{
-  p{
-    color: black;
-    text-align: center;
-  }
-}
-
 @media (max-width: 1200px) {
 
   .button-wrapper{
@@ -322,13 +315,11 @@ p{
   }
 
   .nm-top-bar-text > p:first-child{
-    font-size: 8px;
-    color: black;
-  }
-  .nm-top-bar-text{
-    p{
-      font-size: 8px !important;
-    }
+    font-size: 12px;
+    overflow: visible;
+    white-space: normal;
+    line-height: 18px;
+    margin: 10px 0;
   }
 }
 
